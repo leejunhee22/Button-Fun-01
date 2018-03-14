@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+      var i=0
       override func viewDidLoad() {
             super.viewDidLoad()
             view.backgroundColor=UIColor.yellow
@@ -17,6 +17,16 @@ class ViewController: UIViewController {
             // Do any additional setup after loading the view, typically from a nib.
       }
 
+      @IBAction func btnPressed(_ sender: UIButton) {
+            if(i==0) {
+                  view.backgroundColor=UIColor.green
+                  i=1
+            }
+            else {
+                  view.backgroundColor=UIColor.yellow
+                  i=0
+            }
+      }
       override func didReceiveMemoryWarning() {
             super.didReceiveMemoryWarning()
             // Dispose of any resources that can be recreated.
